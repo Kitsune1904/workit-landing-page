@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Manrope", monospace;
+  font-size: 1rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: solid 2px transparent;
+}
+
+header {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+  background-color: #24053e;
+  height: 30.063rem;
+  clip-path: ellipse(150% 100% at 50% 0);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.25rem 0 1.25rem;
+}
+header menu {
+  display: flex;
+  justify-content: space-between;
+}
+header menu img {
+  height: 1.5rem;
+  width: 5.5rem;
+}
+header menu button {
+  font-size: 1.125rem;
+  background: none;
+  border-bottom: solid 2px #44ffa1;
+  color: white;
+  line-height: 180%;
+}
+header menu button:active {
+  color: #44ffa1;
+}
+header h1 {
+  font-family: "Fraunces", sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3.25rem;
+  width: 20rem;
+  align-self: center;
+}
+header h1 span {
+  text-decoration: underline #44ffa1;
+}
+header .more {
+  margin-top: 2.5rem;
+  padding: 0.75rem 2rem;
+  align-self: center;
+  background-color: #44ffa1;
+  font-weight: bold;
+  color: #24053e;
+  font-size: 1.125rem;
+}
+header .more:active {
+  background: none;
+  border: solid 2px #44ffa1;
+  color: #44ffa1;
+}
+
+.hero {
+  position: absolute;
+  width: 20rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 24rem;
+  z-index: 400;
+}
+
+.pattern {
+  display: none;
+}
+
+main {
+  position: relative;
+  top: 28rem;
+}
+main .about {
+  width: 100%;
+  position: absolute;
+  background: #fcf8ff;
+  padding: 11.25rem 1.25rem 4rem 1.25rem;
+  clip-path: ellipse(150% 100% at top);
+}
+main .about ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  counter-reset: counter;
+  gap: 2rem;
+}
+main .about ol li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  counter-increment: counter;
+  align-items: center;
+  text-align: center;
+  color: #24053e;
+}
+main .about ol li span {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .about ol li .special {
+  font-weight: bold;
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .about li::before {
+  font-weight: bold;
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.5rem;
+  content: counter(counter);
+  text-align: center;
+  border: solid 1px #584d62;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 2rem;
+}
+main .fee {
+  position: absolute;
+  top: 72rem;
+  margin: 0 1.25rem 0 1.25rem;
+  padding: 32px;
+  background-color: #24053e;
+  color: #fff;
+  text-align: center;
+}
+main .fee .founder {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: -15rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+main .fee h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+}
+main .fee p {
+  line-height: 180%;
+  padding: 32px 0;
+}
+main .fee button {
+  padding: 12px 32px;
+  color: #24053e;
+  font-weight: bold;
+  background-color: #44ffa1;
+}
+main .fee button:active {
+  background: none;
+  border: solid 2px #44ffa1;
+  color: #44ffa1;
+}
+main .fee::before {
+  display: block;
+  content: "";
+  width: 279px;
+  height: 279px;
+  border: solid 2px #22c881;
+  border-radius: 50%;
+  position: absolute;
+  top: -15rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 128rem;
+  display: flex;
+  gap: 56px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+footer div {
+  display: flex;
+  gap: 28px;
+}
+footer div a:active img {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(30%) saturate(7352%) hue-rotate(265deg) brightness(124%) contrast(106%);
+}
+
+@media (pointer: fine) {
+  button:hover {
+    color: #44ffa1;
+  }
+  .more:hover {
+    background: none;
+    border: solid 2px #44ffa1;
+    color: #44ffa1;
+  }
+  .fee button:hover {
+    background: none;
+    border: solid 2px #44ffa1;
+    color: #44ffa1;
+  }
+  a:hover img {
+    filter: brightness(0) saturate(100%) invert(5%) sepia(30%) saturate(7352%) hue-rotate(265deg) brightness(124%) contrast(106%);
+  }
+}
+@media (min-width: 48rem) {
+  header {
+    padding: 2rem 2.75rem 0 2.75rem;
+    height: 33.75rem;
+    clip-path: ellipse(120% 100% at 50% 0);
+  }
+  header h1 {
+    font-size: 3.75rem;
+    width: 30rem;
+    margin-top: 3.5rem;
+  }
+  .hero {
+    width: 32.125rem;
+    top: 24rem;
+  }
+  .pattern {
+    position: absolute;
+    display: block;
+    z-index: 400;
+  }
+  .pattern:nth-child(odd) {
+    top: 3rem;
+    left: -14rem;
+  }
+  .pattern:nth-child(even) {
+    right: -6rem;
+    top: 18rem;
+  }
+  main {
+    top: 28rem;
+  }
+  main .about {
+    padding: 17.5rem 2.5rem 4rem 2.5rem;
+  }
+  main .about ol {
+    gap: 2rem;
+  }
+  main .about ol li {
+    text-align: justify;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+  main .about ol li span {
+    gap: 1.75rem;
+  }
+  main .about ol li .special {
+    text-align: start;
+  }
+  main .about li::before {
+    flex-shrink: 0;
+  }
+  main .fee {
+    top: 55rem;
+    right: 0rem;
+    width: calc(100vw - 280px);
+    margin: 0 2.5rem 0 2.5rem;
+    padding: 48px;
+    text-align: start;
+  }
+  main .fee .founder {
+    top: -10rem;
+    left: -2.5rem;
+    z-index: -1;
+  }
+  main .fee h2 {
+    font-size: 48px;
+  }
+  main .fee .pattern {
+    left: 55%;
+    top: 75%;
+  }
+  main .fee::before {
+    top: -10rem;
+    left: -2.5rem;
+  }
+  footer {
+    top: 110rem;
+  }
+}
+@media (min-width: 90rem) {
+  header {
+    padding: 3.5rem 10rem 0 10rem;
+    height: 48.188rem;
+    clip-path: ellipse(120% 100% at 50% 0);
+  }
+  header h1 {
+    width: 35rem;
+    font-size: 5rem;
+    margin-top: 3.5rem;
+  }
+  .hero {
+    width: 47.938rem;
+    top: 31.5rem;
+  }
+  .pattern:nth-child(odd) {
+    top: 10rem;
+    left: -7rem;
+  }
+  .pattern:nth-child(even) {
+    right: -3rem;
+    top: 25rem;
+  }
+  main {
+    top: 28rem;
+  }
+  main .about {
+    padding: 34.375rem 10rem 9rem 10rem;
+  }
+  main .about ol {
+    gap: 2rem;
+    flex-direction: row;
+  }
+  main .about ol li {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .about ol li .special {
+    font-size: 2rem;
+    text-align: center;
+  }
+  main .about li::before {
+    font-size: 2rem;
+    flex-shrink: initial;
+  }
+  main .fee {
+    top: 73rem;
+    right: 0rem;
+    width: calc(100vw - 750px);
+    margin: 0 10rem 0 10rem;
+  }
+  main .fee .founder {
+    width: 477px;
+    height: 477px;
+    top: -11rem;
+    left: -10.5rem;
+  }
+  main .fee h2 {
+    font-size: 56px;
+  }
+  main .fee .pattern {
+    left: 52%;
+    top: 60%;
+  }
+  main .fee::before {
+    width: 477px;
+    height: 477px;
+    top: -11rem;
+    left: -10.5rem;
+  }
+  footer {
+    top: 125rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

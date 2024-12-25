@@ -1,0 +1,29 @@
+$green: #44ffa1;
+
+$purple-900: #24053e;
+$purple-500: #584d62;
+$purple-100: #fcf8ff;
+
+$white: #fff;
+
+$text_preset_1: 5rem;
+$text_preset_2: 3.5rem;
+$text_preset_3: 2rem;
+$text_preset_4_5: 1.125rem;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+}
