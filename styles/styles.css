@@ -148,15 +148,15 @@ main .fee {
   position: absolute;
   top: 72rem;
   margin: 0 1.25rem 0 1.25rem;
-  padding: 32px;
+  padding: 2rem;
   background-color: #24053e;
   color: #fff;
   text-align: center;
 }
 main .fee .founder {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 17.5rem;
+  height: 17.5rem;
   top: -15rem;
   left: 50%;
   transform: translate(-50%, 0);
@@ -164,14 +164,14 @@ main .fee .founder {
 }
 main .fee h2 {
   font-family: "Fraunces", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
 }
 main .fee p {
   line-height: 180%;
-  padding: 32px 0;
+  padding: 2rem 0;
 }
 main .fee button {
-  padding: 12px 32px;
+  padding: 0.75rem 2rem;
   color: #24053e;
   font-weight: bold;
   background-color: #44ffa1;
@@ -184,8 +184,8 @@ main .fee button:active {
 main .fee::before {
   display: block;
   content: "";
-  width: 279px;
-  height: 279px;
+  width: 17.438rem;
+  height: 17.438rem;
   border: solid 2px #22c881;
   border-radius: 50%;
   position: absolute;
@@ -201,14 +201,14 @@ footer {
   transform: translate(-50%, 0);
   top: 128rem;
   display: flex;
-  gap: 56px;
+  gap: 3.5rem;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 footer div {
   display: flex;
-  gap: 28px;
+  gap: 1.75rem;
 }
 footer div a:active img {
   filter: brightness(0) saturate(100%) invert(5%) sepia(30%) saturate(7352%) hue-rotate(265deg) brightness(124%) contrast(106%);
@@ -286,9 +286,9 @@ footer div a:active img {
   main .fee {
     top: 55rem;
     right: 0rem;
-    width: calc(100vw - 280px);
+    width: calc(100vw - 17.5rem);
     margin: 0 2.5rem 0 2.5rem;
-    padding: 48px;
+    padding: 3rem;
     text-align: start;
   }
   main .fee .founder {
@@ -297,7 +297,7 @@ footer div a:active img {
     z-index: -1;
   }
   main .fee h2 {
-    font-size: 48px;
+    font-size: 3rem;
   }
   main .fee .pattern {
     left: 55%;
@@ -359,25 +359,25 @@ footer div a:active img {
   main .fee {
     top: 73rem;
     right: 0rem;
-    width: calc(100vw - 750px);
+    width: calc(100vw - 46.875rem);
     margin: 0 10rem 0 10rem;
   }
   main .fee .founder {
-    width: 477px;
-    height: 477px;
+    width: 29.813rem;
+    height: 29.813rem;
     top: -11rem;
     left: -10.5rem;
   }
   main .fee h2 {
-    font-size: 56px;
+    font-size: 3.5rem;
   }
   main .fee .pattern {
     left: 52%;
     top: 60%;
   }
   main .fee::before {
-    width: 477px;
-    height: 477px;
+    width: 29.813rem;
+    height: 29.813rem;
     top: -11rem;
     left: -10.5rem;
   }
